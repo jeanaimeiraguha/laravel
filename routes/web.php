@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/Users', function () {
-   return view('Users',$Users=['type'=>'IRAGUHA' ,'age'=>'Davis','address'=>"Nyamata"]);
+   return view('Users',$Users=['type'=>'IRAGUHA' ,'age'=>23,'address'=>"Nyamata"]);
    //return "Iraguha likes laravel";
    //lets return json file
    //return ["name"=>"Iraguha","age"=>19];

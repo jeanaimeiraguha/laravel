@@ -23,15 +23,23 @@
     <body class="antialiased">
   <div>
     <h2 class="display-3 text-center text-warning">Welcome to my Laravel App</h2>
+@if ($age<12)
+<p>Age is less</p>
+@else
+<p>You are old enough brh</p>
 
+@endif
 </div>
 <section>
     <p  class="display-5 py-3 px-4 text-center">Welcome to Our services</p>
 </section>
 
+
 <p class="text-center">
 Routing rendering laravel </p>
 <p class="text-center">Users: <br>{{$type}} :{{$age}} <br>address: {{$address}}</p>
+
+
 
 
 
