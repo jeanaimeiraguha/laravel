@@ -42,6 +42,10 @@
 <section>
     <p  class="display-5 py-3 px-4 text-center">Welcome to Our services</p>
 </section>
+@php
+    $name='Cyusa';
+    echo($name);
+@endphp
 
 
 <p class="text-center">
