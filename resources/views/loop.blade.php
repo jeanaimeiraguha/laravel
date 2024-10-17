@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+    @php
+    echo("Loop statement:");
+@endphp
 <p>This is Use of laravel blade loop</p>
+@for ($i=0 ;$i <5; $i++)
+<p>The value of i is:{{$i}}</p>
+
+
+@endfor
+
 </body>
 </html>
