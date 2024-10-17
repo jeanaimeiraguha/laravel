@@ -23,12 +23,21 @@
     <body class="antialiased">
   <div>
     <h2 class="display-3 text-center text-warning">Welcome to my Laravel App</h2>
+    <h3 class="display-3 text-center">This is use of conditional rendering with blade</h3>
 @if ($age<12)
+
 <p>Age is less</p>
+@elseif ($age=23)
+<p class="text-center p-5">Okay you are in the right way</p>
 @else
-<p>You are old enough brh</p>
+<p class="text-center text-success">You are old enough brh</p>
 
 @endif
+<h3 class="text-center fw-bold">This is use of unless as opposite of if:</h3>
+@unless ($name == "Iraguha")
+<p class="text-center bg-warning">Welcome: <br>{{$name}}</p>
+
+@endunless
 </div>
 <section>
     <p  class="display-5 py-3 px-4 text-center">Welcome to Our services</p>
@@ -37,7 +46,7 @@
 
 <p class="text-center">
 Routing rendering laravel </p>
-<p class="text-center">Users: <br>{{$type}} :{{$age}} <br>address: {{$address}}</p>
+<p class="text-center">Users: <br>{{$name}} :{{$age}} <br>years old <br>address: {{$address}}</p>
 
 
 
